@@ -1,0 +1,6 @@
+* Install VirtualBox (linux:repos, mac/win:virtualbox.org)
+* Install Vagrant    (linux:repos, mac/win:vagrantup.com)
+* $ vagrant up       # Creates the VM.
+* $ vagrant ssh      # ssh into the VM. The root folder(which has the Vagrantfile) is accessible as /vagrant
+
+$ see vagrant -h for info on how to suspend/shutdown/delete/etc the VM.
