@@ -15,7 +15,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Enable USB access
   config.vm.provider "virtualbox" do |vb|
     vb.customize ['modifyvm', :id, '--usb', 'on']
-    vb.customize ['modifyvm', :id, '--usbehci', 'on']
     vb.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'msp430 Programmer', '--vendorid', '0x2047', '--productid', '0x0013']
     # Don't boot with headless mode
     # vb.gui = true
