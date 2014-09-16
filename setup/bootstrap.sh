@@ -7,6 +7,9 @@ echo "Downloading TI MSPGCC"
 wget -qO installer $TI_MSPGCC_URL
 echo "Installing TI MSPGCC"
 chmod +x installer
+# Copy headers and ldscripts to the correct location to prevent the need to explicitly include them
+cp $TI_MSPGCC_DIR/{include/*.h,msp430-elf/include}
+cp $TI_MSPGCC_DIR/{include/*.ld,msp430-elf/lib}
 
 ./installer --mode unattended --prefix $TI_MSPGCC_DIR
 echo "export PATH=$TI_MSPGCC_DIR/bin:$PATH" >> /etc/profile
