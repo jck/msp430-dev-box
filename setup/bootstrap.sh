@@ -15,5 +15,6 @@ cp $TI_MSPGCC_DIR/{include/*.ld,msp430-elf/lib}
 echo "export PATH=$TI_MSPGCC_DIR/bin:$PATH" >> /etc/profile
 $TI_MSPGCC_DIR/install_scripts/msp430uif_install.sh
 
+apt-get update
 apt-get install -y mspdebug linux-image-extra-virtual
 ln -s $TI_MSPGCC_DIR/bin/libmsp430.so /usr/lib/
