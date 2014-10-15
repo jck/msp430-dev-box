@@ -51,7 +51,10 @@ Make the MSP430FR5969 Blink
 ----------------------------
 First create your `Makefile`, note that headers must be manually included. Otherwise, a standard makefile.
 
-
+<table>
+  <tbody><tr>
+		<td class="code"> <div class="highlight">
+		<pre>
 	OBJECTS=blink.o
 	
 	SUPPORT_FILE_DIRECTORY = /opt/ti-mspgcc/include
@@ -72,6 +75,13 @@ First create your `Makefile`, note that headers must be manually included. Other
 	clean: 
 	        rm blink.o msp430fr5969.out
 	        
+		
+		</pre>
+		</div>
+ 
+    </td>
+  </tr>
+</tbody></table>
 	        
 Here is the `blink.c` code, also very standard:
 	
