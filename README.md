@@ -11,6 +11,7 @@ Prerequisites
 Usage
 -----
 - `$ vagrant up`       # Creates the VM.
+- After creating the VM for the first time, you must reload it: `$ vagrant reload`
 - `$ vagrant ssh`      # ssh into the VM. 
 - see `vagrant -h` for info on how to suspend/shutdown/delete/etc the VM.
 - The root folder(which has the Vagrantfile) is accessible as /vagrant
