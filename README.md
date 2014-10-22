@@ -111,6 +111,21 @@ Now install the code onto the connected MSP430FR5969 Launchpad.
 	
 You should see some blinking, at this point.
 
+###Adding your project repo
+Once all the above has been done, tested, and works. Add your project repo to the vagrant box. You may have to install a git, svn or hg client before this using the usual Ubuntu / Debian methods 
+
+Once this is done, while inside the vagrant box:
+
+$ cd /vagrant
+$ mkdir Repos
+$ svn co | hg clone | git clone [REPO_URL] [REPO_NAME]
+
+The "Repos" directory is a shared directory between your vagrant box and your host computer.
+
+###Using your favorite text editor
+Since "Repos" directory is a shared directory between your vagrant box and your host computer, you do not have to change your workflow in any way. ONLY use the vagrant box to compile and install.
+
+Open your favorite text editor, IDE, or VIM on your HOST computer, and navigate to the `msp430-dev-box/Repos` directory. You will see the recently added project repository. Edit code at will, and use the vagrant to compile / install.
 
 ###Troubleshooting
 If you see a cryptic message like "No unused FET found.", this means that the host operating system grabbed the USB device and not the virtual machine. All you need to do is unplug, then plug back in the Launchpad. To avoid this in the future, wait until you have run `vagrant ssh` and see the prompt to plug in the launchpad.
