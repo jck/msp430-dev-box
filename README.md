@@ -132,3 +132,16 @@ Open your favorite text editor, IDE, or VIM on your HOST computer, and navigate 
 If you see a cryptic message like "No unused FET found.", this means that the host operating system grabbed the USB device and not the virtual machine. All you need to do is unplug, then plug back in the Launchpad. To avoid this in the future, wait until you have run `vagrant ssh` and see the prompt to plug in the launchpad.
 
 Note that Mac does not have a `usermod` command.
+
+####Troubleshooting Windows
+If you choose to develop on this awful OS you are asking for trouble, note these things before trying:
+
+
+ - 5969 fraunchpad firmware update crashes on windows (probably UAC related). Make sure you update the firmware(using a real OS) before using new fraunchpads.
+
+ - If a board was plugged into the host while the vm was not running, usb passthrough does not work. Starting the VM and unplugging,replugging the board doesn't help. Windows needs to be rebooted to allow usb passthrough again.
+
+- If shared folder mounting during provisioning is not working. Update to the newest VM.
+
+Using windows for anything even tangentially related to development, or computer science in general is higly discouraged.
+
