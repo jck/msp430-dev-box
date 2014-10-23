@@ -1,2 +1,4 @@
 syntax: glob
 .vagrant
+Repos
+projects
