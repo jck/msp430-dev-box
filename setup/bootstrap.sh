@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-TI_MSPGCC_URL=http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/MSPGCC/2_01_01_00/exports/msp430-gcc-full-linux-installer-2.1.1.0.run
+TI_MSPGCC_URL=http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/MSPGCC/3_02_02_00/exports/msp430-gcc-full-linux-installer-3.2.2.0.run
 TI_MSPGCC_DIR=/opt/ti-mspgcc
 
 echo "Downloading TI MSPGCC"
